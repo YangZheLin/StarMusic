@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_fragment_like"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" >
+
+        <com.example.administrator.starmusic.view.MyViewPager2
+            android:id="@+id/vp_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:background="#66000000"
+            android:id="@+id/ll_points"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            >
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.administrator.starmusic.view.CircleImageView
+            android:id="@+id/civ_tuijian"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/tuijian"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            />
+        <com.example.administrator.starmusic.view.CircleImageView
+            android:id="@+id/civ_new_fabu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/fabu"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+
+            />
+        <com.example.administrator.starmusic.view.CircleImageView
+            android:id="@+id/civ_kaishi"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/kaishi"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/civ_tuijian"
+            android:layout_alignRight="@+id/civ_tuijian"
+            android:layout_below="@+id/civ_tuijian"
+            android:text="推荐歌曲"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/civ_new_fabu"
+            android:layout_alignRight="@+id/civ_new_fabu"
+            android:layout_below="@+id/civ_new_fabu"
+            android:text="最新发布"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/civ_kaishi"
+            android:layout_alignRight="@+id/civ_kaishi"
+            android:layout_below="@+id/civ_kaishi"
+            android:text="开始听歌"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_today1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

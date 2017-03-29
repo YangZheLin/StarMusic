@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.example.administrator.starmusic"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 3
+        versionName "3.0"
+        manifestPlaceholders = [
+                GETUI_APP_ID : "DuJY9zA2cU6s9pQA8Y1ik2",
+                GETUI_APP_KEY : "kQFaWdHz8nAWRb1DwAtU29",
+                GETUI_APP_SECRET : "WB2j3ilyTCA8G1llLtsFc7"
+        ]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi' , 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    //    compile files('libs/gson-2.3.1.jar')
+    // Retrofit Gson数据转换器
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    //    compile'com.facebook.fresco:fresco:0.5.0+'
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    // 图片加载
+    compile files('libs/gson-2.3.1.jar')
+
+    //注释掉原有bugly的仓库
+    //compile 'com.tencent.bugly:crashreport:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.3.2
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    compile 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+    //小米个推
+    compile 'com.getui:sdk:2.9.5.0'
+
+}

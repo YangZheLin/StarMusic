@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_fragment_like"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" >
+
+            <com.example.administrator.starmusic.view.MyViewPager2
+                android:id="@+id/vp_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:background="#66000000"
+                    android:id="@+id/ll_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    >
+                </LinearLayout>
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="40dp">
+<ImageView
+    android:id="@+id/iv_wujiaoxin"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:src="@mipmap/wujiaoxin"
+    android:scaleType="fitXY"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="20dp"
+    />
+<TextView
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="今日推荐"
+    android:textSize="17dp"
+    android:gravity="center"
+    android:layout_toRightOf="@+id/iv_wujiaoxin"
+    />
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="17dp"
+        android:text="更多"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:background="#cccccc"
+    android:layout_height="1dp"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_today1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+    </LinearLayout>

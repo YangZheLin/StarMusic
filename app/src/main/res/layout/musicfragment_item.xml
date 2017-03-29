@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="80dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_list_item_oic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        fresco:placeholderImage="@mipmap/wanghong"
+        android:layout_marginLeft="20dp"
+        fresco:roundAsCircle="true"
+        fresco:roundedCornerRadius="180dp"
+        fresco:actualImageScaleType="focusCrop"
+        />
+    <!--<com.example.administrator.starmusic.view.CircleImageView-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:id="@+id/iv_list_item_oic"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:src="@mipmap/wanghong"-->
+        <!--/>-->
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_alignParentBottom="true"
+        android:id="@+id/cb_liu_liu"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:button="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="@drawable/button_liu_selector"
+        />
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:lines="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb_liu_liu"
+        android:layout_alignRight="@+id/cb_liu_liu"
+        android:layout_alignLeft="@+id/cb_liu_liu"
+        android:text="3428"
+        android:textSize="15dp"
+        />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_marginLeft="10dp"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@+id/iv_list_item_oic"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+
+        android:id="@+id/tv_music_name"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我知道你不爱我"
+        android:textSize="20dp"
+        />
+
+<TextView
+    android:layout_marginTop="4dp"
+    android:id="@+id/tv_yan_chang_zhe"
+    android:layout_alignLeft="@+id/tv_music_name"
+    android:layout_below="@+id/tv_music_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="演唱者"
+    android:textSize="20dp"
+    />
+    <View
+        android:layout_marginLeft="10dp"
+        android:id="@+id/view_xian"
+        android:layout_alignTop="@+id/tv_yan_chang_zhe"
+        android:layout_toRightOf="@+id/tv_yan_chang_zhe"
+        android:layout_alignBottom="@+id/tv_yan_chang_zhe"
+        android:background="#66000000"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_yuan_chuang"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/tv_yan_chang_zhe"
+        android:layout_toRightOf="@+id/view_xian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原创某某某"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
+
+</RelativeLayout>

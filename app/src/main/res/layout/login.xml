@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#e12244"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e12244"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:text="用户登入"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:background="@drawable/setting_back_selector"
+            android:id="@+id/tv_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+
+            />
+
+    </RelativeLayout>
+
+<LinearLayout
+
+    android:id="@+id/ll_login"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/et_login_usename"
+        android:hint="请输入网红号"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableLeft="@mipmap/username"
+        android:background="@mipmap/editback"
+        />
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/et_login_pwd"
+        android:hint="请输入密码"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableLeft="@mipmap/pwd"
+        android:background="@mipmap/editback"
+        />
+
+<ImageButton
+    android:id="@+id/ib_login_login"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="40dp"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:src="@mipmap/login"
+    android:scaleType="fitXY"
+    android:background="#ffffff"
+    />
+<RelativeLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_login_rebuild_pwd"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:textSize="20dp"
+        android:textColor="#e12244"
+        />
+
+    <TextView
+        android:id="@+id/tv_login_register"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:id="@+id/ll_register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/et_register_usename"
+        android:hint="请输入昵称"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableLeft="@mipmap/username"
+        android:background="@mipmap/editback"
+        />
+
+    <EditText
+        android:id="@+id/et_register_whh"
+        android:inputType="number"
+        android:hint="请输入6位网红号（仅限数字）"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableLeft="@mipmap/username"
+        android:background="@mipmap/editback"
+        />
+    <EditText
+        android:id="@+id/et_register_pwd"
+        android:inputType="textPassword"
+        android:hint="设置密码"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableLeft="@mipmap/pwd"
+        android:background="@mipmap/editback"
+        />
+    <EditText
+        android:id="@+id/et_register_again_pwd"
+        android:inputType="textPassword"
+        android:hint="确认密码"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableLeft="@mipmap/pwd"
+        android:background="@mipmap/editback"/>
+    <ImageButton
+        android:id="@+id/ib_register_register"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@mipmap/submitreg"
+        android:scaleType="fitXY"
+        android:background="#ffffff"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_regoster_zhijie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有网红号直接登入"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:paddingLeft="20dp"
+        android:id="@+id/rl_regster_suceed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <TextView
+       android:id="@+id/tv_suceed_whh"
+       android:layout_marginTop="40dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="恭喜  123456 网红号注册成功！"
+       />
+        <TextView
+            android:id="@+id/tv_suceed_save"
+            android:layout_below="@+id/tv_suceed_whh"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请您妥善记录账号及密码"
+            />
+        <TextView
+            android:layout_below="@+id/tv_suceed_save"
+            android:id="@+id/tv_suceed_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="昵称 XXXX"
+            />
+        <TextView
+            android:layout_below="@+id/tv_suceed_name"
+            android:id="@+id/tv_suceed_whh2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="网红号 123456"
+            />
+        <TextView
+            android:layout_below="@+id/tv_suceed_whh2"
+            android:id="@+id/tv_suceed_pwd"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="密码 XX123456"
+            />
+        <TextView
+            android:layout_below="@+id/tv_suceed_pwd"
+            android:id="@+id/tv_suceed_fangbian"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="亲截图保存更方便哦"
+            />
+        <ImageButton
+            android:id="@+id/ib_suceed_login"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@mipmap/login"
+            android:scaleType="fitXY"
+            android:background="#ffffff"
+            android:layout_below="@+id/tv_suceed_fangbian"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>

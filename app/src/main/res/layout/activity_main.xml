@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.starmusic.ui.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e12244"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        >
+    <com.example.administrator.starmusic.view.CircleImageView
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/iv_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/moren"
+        android:scaleType="centerCrop"
+        />
+    <ImageButton
+        android:layout_centerVertical="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/search1"
+        android:padding="1dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/imagerbutton_back_selector"
+        />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+            />
+            <ImageButton
+                android:layout_marginRight="12dp"
+            android:layout_width="0dp"
+                android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/yingyue1"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/imagerbutton_back_selector" />
+            <ImageButton
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/pause"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/imagerbutton_back_selector" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+       android:paddingLeft="2dp"
+        >
+        <RadioButton
+            android:textColor="@drawable/checkbox_textcolor_selector"
+            android:checked="true"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rb_like"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="喜欢"
+
+            />
+        <RadioButton
+            android:textColor="@drawable/checkbox_textcolor_selector"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rb_music"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="音乐"
+
+            />
+        <RadioButton
+            android:textColor="@drawable/checkbox_textcolor_selector"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rb_bangdan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="榜单"
+
+            />
+
+
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#bbbbbb"
+        />
+
+    <com.example.administrator.starmusic.view.MyViewPager
+        android:id="@+id/myvp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        />
+</LinearLayout>

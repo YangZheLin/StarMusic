@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:id="@+id/ll_slidemenu"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e12244"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="#ffffff"
+        >
+
+        <com.example.administrator.starmusic.view.CircleImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_menu_head"
+            android:layout_width="80dp"
+           android:layout_height="80dp"
+            android:src="@mipmap/moren"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_menu_head"
+            android:layout_alignRight="@+id/iv_menu_head"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/v"
+            />
+    <TextView
+        android:textSize="@dimen/sliding_menu_textsize"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_wh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网红:"
+        android:layout_toRightOf="@+id/iv_menu_head"
+        android:layout_alignTop="@+id/iv_menu_head"
+        />
+        <TextView
+            android:id="@+id/tv_ni_cheng"
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:layout_alignTop="@+id/tv_wh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:layout_toRightOf="@+id/tv_wh"/>
+        <TextView
+            android:layout_marginTop="9dp"
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:textColor="#ff0000"
+            android:layout_alignLeft="@+id/tv_wh"
+            android:id="@+id/tv_whrz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网红认证:"
+            android:layout_below="@+id/tv_wh"
+            />
+        <TextView
+            android:lines="1"
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:textColor="#ff0000"
+            android:layout_alignTop="@+id/tv_whrz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mc音乐人"
+            android:layout_toRightOf="@+id/tv_whrz"/>
+        <TextView
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:layout_alignLeft="@+id/tv_wh"
+            android:id="@+id/tv_dj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66级"
+            android:layout_toRightOf="@+id/iv_menu_head"
+            android:layout_alignBottom="@+id/iv_menu_head"
+            />
+        <TextView
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIP"
+            android:textColor="#ff0000"
+            android:layout_toRightOf="@+id/tv_dj"
+            android:layout_alignTop="@+id/tv_dj"
+            />
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_bluez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_dj"
+            android:layout_toRightOf="@+id/tv_vip"
+            android:layout_alignBottom="@+id/tv_dj"
+            android:src="@mipmap/blue"
+            />
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_greenz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_dj"
+            android:layout_toRightOf="@+id/iv_bluez"
+            android:layout_alignBottom="@+id/tv_dj"
+            android:src="@mipmap/green"
+            />
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_redz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_dj"
+            android:layout_toRightOf="@+id/iv_greenz"
+            android:layout_alignBottom="@+id/tv_dj"
+            android:src="@mipmap/red"
+            />
+        <TextView
+            android:singleLine="true"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_js"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_menu_head"
+            android:text="网络MC九局 高迪 天佑都在用的发布平台"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:id="@+id/tv_gz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_js"
+            android:text="关注："
+            />
+        <TextView
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:id="@+id/tv_gzsm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_gz"
+            android:layout_toRightOf="@+id/tv_gz"
+            android:text="199"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:id="@+id/tv_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_gz"
+            android:layout_toRightOf="@+id/tv_gzsm"
+            android:text="粉丝："
+            />
+        <TextView
+            android:textSize="@dimen/sliding_menu_textsize"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_fssm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_gz"
+            android:layout_toRightOf="@+id/tv_fs"
+            android:text="906000"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape"
+
+    >
+<TextView
+    android:id="@+id/tv_menu_whh"
+   android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+   android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_centerInParent="true"
+   android:textSize="@dimen/sliding_menu_textsize"
+    android:text="网红号：666666"
+    android:textColor="#ff0000"
+    />
+</RelativeLayout>
+<View
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#ffffff"/>
+
+    <TextView
+
+        android:id="@+id/tv_she_qu"
+        android:clickable="true"
+        android:background="@drawable/textview_menu_selector"
+        android:drawablePadding="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="社区"
+        android:gravity="right|center_vertical"
+        android:textSize="@dimen/sliding_item_textsize"
+        android:textColor="#ffffff"
+        android:drawableLeft="@mipmap/shejiao1"
+        android:paddingLeft="50dp"
+        android:paddingRight="60dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tv_fa_bu"
+        android:clickable="true"
+        android:background="@drawable/textview_menu_selector"
+        android:drawablePadding="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="发布"
+        android:textSize="@dimen/sliding_item_textsize"
+        android:textColor="#ffffff"
+        android:drawableLeft="@mipmap/fabu1"
+        android:paddingLeft="50dp"
+        android:paddingRight="60dp"
+        android:gravity="right|center_vertical"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tv_fankui"
+        android:clickable="true"
+        android:background="@drawable/textview_menu_selector"
+        android:drawablePadding="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="反馈"
+        android:textSize="@dimen/sliding_item_textsize"
+        android:textColor="#ffffff"
+        android:drawableLeft="@mipmap/fankui1"
+        android:paddingLeft="50dp"
+        android:paddingRight="60dp"
+        android:gravity="right|center_vertical"
+        />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/textview_menu_selector"
+        android:drawablePadding="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="邀请"
+
+        android:textSize="@dimen/sliding_item_textsize"
+        android:textColor="#ffffff"
+        android:drawableLeft="@mipmap/yaoqin1"
+        android:paddingLeft="50dp"
+        android:paddingRight="60dp"
+        android:gravity="right|center_vertical"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/textview_menu_selector"
+        android:id="@+id/tv_setting"
+        android:drawablePadding="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="设置"
+
+        android:textSize="@dimen/sliding_item_textsize"
+        android:textColor="#ffffff"
+        android:drawableLeft="@mipmap/shezhi1"
+        android:paddingLeft="50dp"
+        android:paddingRight="60dp"
+        android:gravity="right|center_vertical"
+        />
+
+    <RelativeLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_menu_back"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:background="@drawable/textview_menu_tuichu_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_slidemenu_login"
+            android:gravity="center"
+            android:drawableTop="@mipmap/loginlogo"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登入/注册"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="huise">#BBBBBB</color>
+    <color name="fenhongse">#FAEAE6</color>
+    <color name="hongse">#ff653f</color>
+    <color name="baise">#ffffff</color>
+    <color name="colorhead">#e12244</color>
+    <color name="colorhead1">#cce12244</color>
+    <color name="mask_tags_1">#ff653f</color>
+
+</resources>
